@@ -3,7 +3,8 @@
 
 import imagehash
 from PIL import Image
-
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def getKey(item):
     return item[0]
